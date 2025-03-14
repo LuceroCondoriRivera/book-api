@@ -9,6 +9,15 @@ const server = net.createServer((Socke) => {
     Socke.on / ('data', (data) => {
         console.log(`datos recibidos ${data}`)
     })
+
+    Socket.on('error', (err) => {
+        console.log(err.message)
+    })
+    Socke.on('end', () => {
+        console.log('comunicacion terminada')
+    })
+
+
     Socke.on('end', () => {
         console.log('comunicacion terminada')
     })
