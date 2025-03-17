@@ -3,7 +3,7 @@
   "versión": "1.0.0"
   "principal": "index.js",
   "guiones": {
-    "prueba": "eco "Error no se especificó ninguan prueba" " && salida 1 "
+    "prueba": "eco "
   },
   "palabras claves": [], 
   "autor": "", 
