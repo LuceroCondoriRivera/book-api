@@ -1,12 +1,12 @@
 {
   "nombre": "Api de vehículo",
-  "versión": "1
+  "versión": "1.0.0"
   "principal": "index.js",
   "guiones": {
-    "prueba": "eco "Error: no se especifico ninguna prueba " && salida 1"  
+    "prueba": "eco "Error no se especificó ninguan prueba" " && salida 1 "
   },
   "palabras claves": [], 
-  "autor": "", .
+  "autor": "", 
   "licencia": "ISC",  
   "descripción": "",
   "dependencies": {
