@@ -1,15 +1,16 @@
 {
-  "nombre": "Api de vehículo", // Nombre del proyecto.
-  "versión": "1.0.0", // Versión actual del proyecto.
-  "principal": "index.js",  // Archivo principal del proyecto , ahi comienza la ejecución.
+  "nombre": "Api de vehículo",
+  "versión": "1
+  "principal": "index.js",
   "guiones": {
-    "prueba": "eco "Error: no se especifico ninguna prueba " && salida 1"  // Comando de prueba predeterminado.
+    "prueba": "eco "Error: no se especifico ninguna prueba " && salida 1"  
   },
-  "palabras claves": [], // Lista de palbras claves para definir el proyecto ( actualmente vacío ).
-  "autor": "",  //Autor o autores del proyecto ( agregar nombres de quienes conforman el proyecto ).
-  "licencia": "ISC",  // Tipo de licencia bajo la cual se distribuye el código .
-  "descripción": "",  // Breve descripción del proyecto ( actualmente vacío ).
+  "palabras claves": [], 
+  "autor": "", .
+  "licencia": "ISC",  
+  "descripción": "",
   "dependencies": {
-    "sincronización de avisos": "^4.2.0",  // Dependencia para entrada de usuario en la terminal sin necesidad de "readline"  (El módulo Readline proporciona una forma de leer un flujo de datos una línea a la vez).
-    "uuid": "^11.1.0"  // Dependencia para generar identificadores únicos universales ( UUID) .
+    "sincronización de avisos": "^4.2.0",
+    "uuid": "^11.1.0"  
+  }
 }
