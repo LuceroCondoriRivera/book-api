@@ -4,10 +4,10 @@ constante  { versión 4: uuidv4 } = requerir('uuid')// Importa la funcion uuidv4
 constante servidor = neto.crearServidor((Zócalo) => {
     constante versión 4 = uuidv4() // Genera un identificador unico ( uuidv4).
     consola.registro('conexión exitosa')//Mensaje cuando el cliene se conecta .
-    consola.registro('UUID V4: ', versión 4)//Muestra el UUID generado en la consola .
+    consola.registro('UUID V4: ', versión 4) //Muestra el UUID generado en la consola .
 //Maneja los datos recibidos del cliente.
     Zócalo.en / ('data', (data) => {
-        consola.registro(`datos recibidos ${datos}`)
+        consola.registro(`datos recibidos${datos}`)
 //Maneja la finalizacion de la conversacion .        
 Zócalo.en('fin', () => {
         consola.registro('comunicación terminada')
