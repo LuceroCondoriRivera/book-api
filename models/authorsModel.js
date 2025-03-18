@@ -11,29 +11,32 @@
 // • GET PUBLISHERS
 // • ADD PUBLISHER
 
-const fs = require('fs');
-const path = require('path');
-const authorsPath = path.join(__dirname, '../data/authors.json');
+constante fs = requerir('fs'); // Módulo nativo de Node.js para manipulacion de archivos.
+constante camino  = requerir('camino');  // Módulo para manejar rutas de archivos de manera compatible con diferentes sistemas opertivos .
+constante  autoresPath = camino.unirse(__nombredirectorio, '../datos/autores.json'); //Ruta del archivo JSON donde se almacenan los autores .
 
-function getAuthors() {
-    const data = fs.readFileSync(authorsPath);
-    return JSON.parse(data);
+función obtenerAutores() {
+    constante datos = fs.readFileSync(autoresPath); //Lee el archivo de manera síncrona.
+    devolver JSON.analizar gramaticalmente(datos); // Convierte el contenido JSON en un array de objetos .
 }
 
-function addAuthor(author) {
-    const authors = getAuthors();
-    authors.push(author);
-    fs.writeFileSync(authorsPath, JSON.stringify(authors, null, 2));
+función añadirAutor(autor) {
+    constante autores = obtenerAutores(); // Obtiene la lista actual de autores.
+    autores.empujar(autor); // Agrega el nuevo autor al array.
+    fs.escribirFileSync(autoresPath, JSON.convertir en cadena (autores, nulo, 2));// Guarda los cambios en el archivo JSON , con formato legible.
 }
 
-const findAuthor = (query) => {
-    const authors = getAuthors();
-    if (typeof query === 'string') {
-        return authors.filter(author => author.name.toLowerCase().includes(query.toLowerCase())
+constante encontrarAutor = (consulta) => {
+    constante autores = obtenerAutores(); // Obtiene la lista de autores.
+
+    //Verifica que la consulta sea un string válido antes de hacer la busqueda.
+    si (tipo de consulta  === 'cadena') {
+        devolver autores.filtrar(autor => autor.nombre.a minúsculas().incluye(consulta.a minúsculas()) //Filtra autores cuyo nombre coincida ( sin importar mayúsculas - minúsculas ).
         );
     }
-    return null;
+    devolver nulo;  // Retorna "null"si la consulta no es un string válido.
 }
 
-module.exports = { getAuthors, addAuthor, findAuthor };
+// Exporta las funciones para poder usarlas en otros archivos .
+módulo.exportar = { obtenertAutores, agregarAutores, encontrarAutor };
 
