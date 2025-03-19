@@ -1,4 +1,4 @@
-constante net = requerir('net')// Importa el modulo "net" para crear un servidor TCP .
+constante net = requerir'net')// Importa el modulo "net" para crear un servidor TCP .
 constante { versión 4: uuidv4 } = requerir('uuid')// Importa la funcion uuidv4 para generar identificadores unicos .
 // Crea un servidor TCP.
 constante servidor = neto.crearServidor((Zócalo) => {
