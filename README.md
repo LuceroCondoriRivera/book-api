@@ -9,7 +9,6 @@ Consiste en el desarrollo de una API de gestión de bibliotecas basada en un **s
 
 🛠️ **Tecnologías utilizadas:**
 - Node.js
-- Módulo `net` para la comunicación TCP
 - JSON para almacenamiento de datos
 - Modularización con el patrón MVC
 
