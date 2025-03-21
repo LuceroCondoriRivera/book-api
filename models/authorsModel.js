@@ -11,28 +11,39 @@
 // • GET PUBLISHERS
 // • ADD PUBLISHER
 
-const fs = require('fs');
-const path = require('path');
-const authorsPath = path.join(__dirname, '../data/authors.json');
+const fs = require('fs'); // Módulo nativo de Node.js para manipulacion de archivos.
+
+const path = require('path'); // Módulo para manejar rutas de archivos de manera compatible con diferentes sistemas opertivos .
+
+const authorsPath = path.join(__dirname, '../data/authors.json');  //Ruta del archivo JSON donde se almacenan los autores .
+
 
 function getAuthors() {
-    const data = fs.readFileSync(authorsPath);
-    return JSON.parse(data);
+    const data = fs.readFileSync(authorsPath);  //Lee el archivo de manera síncrona.
+
+    return JSON.parse(data); // Convierte el contenido JSON en un array de objetos .
 }
 
 function addAuthor(author) {
-    const authors = getAuthors();
-    authors.push(author);
-    fs.writeFileSync(authorsPath, JSON.stringify(authors, null, 2));
+    const authors = getAuthors(); // Obtiene la lista actual de autores.
+
+    authors.push(author); // Agrega el nuevo autor al array.
+
+    fs.writeFileSync(authorsPath, JSON.stringify(authors, null, 2)); // Guarda los cambios en el archivo JSON , con formato legible.
 }
 
 const findAuthor = (query) => {
-    const authors = getAuthors();
+    const authors = getAuthors(); // Obtiene la lista de autores.
+  
+    //Verifica que la consulta sea un string válido antes de hacer la busqueda.
+
     if (typeof query === 'string') {
+        //Filtra autores cuyo nombre coincida ( sin importar mayúsculas - minúsculas ).
         return authors.filter(author => author.name.toLowerCase().includes(query.toLowerCase())
         );
     }
-    return null;
+    return null; // Retorna "null"si la consulta no es un string válido.
 }
 
+// Exporta las funciones para poder usarlas en otros archivos .
 module.exports = { getAuthors, addAuthor, findAuthor };
