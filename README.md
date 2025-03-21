@@ -34,7 +34,7 @@ Consiste en el desarrollo de una API de gestión de bibliotecas basada en un **s
 ## 🔧 Instalación y Configuración
 1️⃣ Clona este repositorio:
 ```sh
-git clone https://github.com/usuario/book-api.git
+git clone https://github.com/LuceroCondoriRivera/book-api.git
 ```
 2️⃣ Accede al directorio del proyecto:
 ```sh
