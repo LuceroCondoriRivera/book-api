@@ -1,5 +1,5 @@
 [
-    {"id": 1, "titulo": "Orgullo y prejuicio", "autor": "Jane Austen", "anio": 1813, "genero": "novela"},
-    {"id": 2, "titulo": "Lolita", "autor": "Vladimir Nabokov", "anio": 1955, "genero": "novela"},
-    {"id": 3, "titulo": "Frankenstein", "autor": "Mary Shelley", "anio": 1818, "genero": "Ciencia ficción"}
+    {"id": 1, "titulo": "Planeta", "ubicacion": "Argentina"},
+    {"id": 2, "titulo": "Sudamericana", "ubicacion": "Argentina"},
+    {"id": 3, "titulo": "Memoria", "ubicacion": "Perú"}
 ]
