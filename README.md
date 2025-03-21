@@ -4,7 +4,7 @@
 
 ## 🚀 Descripción
 
-Este proyecto es un **Trabajo Práctico Integrador** del Módulo 2 - Fundamentos de Node.js. 
+Este proyecto es un **Trabajo Práctico Integrador** de Fundamentos de Node.js. 
 Consiste en el desarrollo de una API de gestión de bibliotecas basada en un **servidor TCP**, permitiendo manejar datos almacenados en archivos JSON. 
 
 🛠️ **Tecnologías utilizadas:**
