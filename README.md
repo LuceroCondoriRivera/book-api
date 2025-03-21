@@ -1,6 +1,6 @@
 # 📚 API de Gestión de Biblioteca
 
-![Node.js](https://img.shields.io/badge/Node.js-16.x-green?style=flat&logo=node.js) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat&logo=javascript) ![Status](https://img.shields.io/badge/Status-En%20Desarrollo-orange)
+![Node.js](https://img.shields.io/badge/Node.js-16.x-green?style=flat&logo=node.js) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat&logo=javascript) 
 
 ## 🚀 Descripción
 
