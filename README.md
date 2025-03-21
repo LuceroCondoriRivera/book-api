@@ -44,10 +44,7 @@ cd book-api
 ```sh
 npm install
 ```
-4️⃣ Inicia el servidor:
-```sh
-npm start
-```
+
 
 ## ✅ Funcionalidades Implementadas
 ✔️ **Listar libros, autores y editoriales**
